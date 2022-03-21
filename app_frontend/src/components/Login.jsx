@@ -16,12 +16,14 @@ const Login = () => {
     console.log('Anser of response is: ', response)
     localStorage.setItem('user', JSON.stringify(response.profileObj) );
     
+    console.log("erro1:", localStorage )
+
     const { name, googleId, imageUrl } = response.profileObj;
     
     const doc = {
       _id: googleId,
       _type: 'user',
-      crossDomain: true,
+      // crossDomain: true,
       userName: name,
       image: imageUrl,
     }
@@ -64,7 +66,7 @@ const Login = () => {
                 )}
                 onSuccess={responseGoogle}
                 onFailure={responseGoogle}
-                cookiePolicy="single_host_origin"
+                // cookiePolicy="single_host_origin"
               />
 
             </div>
