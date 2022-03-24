@@ -13,11 +13,11 @@ const Login = () => {
   const navigate = useNavigate(); // called usenavigate as a hook
 
   const responseGoogle = (response) => {
-    console.log('Anser of response is: ', response)
+    // console.log('Anser of response is: ', response)
 
     localStorage.setItem('user', JSON.stringify(response.profileObj)) ;
     
-    console.log("erro1:", localStorage )
+    // console.log("erro1:", localStorage )
 
     const { name, googleId, imageUrl } = response.profileObj;
     

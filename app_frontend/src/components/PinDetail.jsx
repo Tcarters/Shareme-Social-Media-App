@@ -147,7 +147,7 @@ const PinDetail = ({ user }) => {
               </div>
           </div>
     </div>
-    { console.log('value of pins: ',  pins) }
+    {/* { console.log('value of pins: ',  pins) } */}
     {pins?.length > 0 ? (
       <>
         <h2 className='text-center font-bold text-2x mt-8 mb-4'>
