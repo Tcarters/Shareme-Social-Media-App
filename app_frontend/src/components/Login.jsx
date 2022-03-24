@@ -15,7 +15,7 @@ const Login = () => {
   const responseGoogle = (response) => {
     console.log('Anser of response is: ', response)
 
-    localStorage.setItem('user', JSON.stringify(response.profileObj) );
+    localStorage.setItem('user', JSON.stringify(response.profileObj)) ;
     
     console.log("erro1:", localStorage )
 
@@ -73,8 +73,6 @@ const Login = () => {
             </div>
         </div>
       </div>
-      Login
-
     </div>
   );
 };
